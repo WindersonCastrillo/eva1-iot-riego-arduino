@@ -1,0 +1,9 @@
+# Sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Archivos con claves (por si pasas a WiFi)
+secrets.h
+*.env

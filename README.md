@@ -19,7 +19,8 @@ eva1-iot-riego-arduino/
 │   ├── nodo_sensor/nodo_sensor.ino     (Arduino UNO #1: sensor + relé + HC-05 esclavo)
 │   └── nodo_control/nodo_control.ino   (Arduino UNO #2: operador + LED + HC-05 maestro)
 ├── docs/
-│   └── diagrama.png                    (diagrama de conexión, en elaboración)
+│   ├── diagrama_circuits.png           (diagrama de conexión del nodo sensor, Tinkercad)
+│   └── diagrama_schematic.pdf          (esquema eléctrico, Tinkercad)
 └── mockup/
     ├── mockup_principal.png
     ├── mockup_sin_enlace.png
@@ -46,8 +47,13 @@ eva1-iot-riego-arduino/
 
 ## 4. Diagrama de conexión
 
-<!-- ![Diagrama de conexión](docs/diagrama.png) -->
-*Diagrama en elaboración.*
+Diagrama del **nodo sensor** armado en Tinkercad Circuits (Arduino UNO, sensor de humedad YL-69, transistor NPN con resistencia de 1 kΩ, relé, diodo de protección, batería de 9 V y bomba):
+
+![Diagrama de conexión del nodo sensor en Tinkercad](docs/diagrama_circuits.png)
+
+Esquema eléctrico equivalente: [ver esquema (PDF)](docs/diagrama_schematic.pdf).
+
+> **Nota:** Tinkercad no incluye el módulo HC-05 ni un módulo de relé con entrada IN. Por eso el relé se representa con el relé suelto LU-5-R, accionado por un transistor NPN desde D8, y el enlace Bluetooth y el nodo control se describen en las tablas de pines de abajo.
 
 **Pines usados**
 
